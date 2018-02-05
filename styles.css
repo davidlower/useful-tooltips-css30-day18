@@ -16,12 +16,8 @@ body {
 /* MAIN SECTIONS */
 
 .tooltip-container {
-   position: absolute;
-   top: 50%;
-   left: 50%;
-
-   -webkit-transform: translate(-50%, -50%);
-   transform: translate(-50%, -50%);
+   width: 300px;
+   margin: 10% auto;
 }
 
 .tooltip {
@@ -203,3 +199,11 @@ a {
 .navigation a:active {
    transform: translateY(1px);
 }
+
+/* MEDIA QUERIES */
+
+/* @media screen and (landscape) {
+   .tooltip, .tooltip::before, .tooltip::after {
+      width
+   }
+} */
