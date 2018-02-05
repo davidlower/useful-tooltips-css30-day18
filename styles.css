@@ -146,7 +146,7 @@ body {
 
 /* TOOLTIP BOTTOM */
 
-.tooltip.bottom:hover::before, .tooltip.bottom:active::before {
+.tooltip.bottom:hover::before {
    position: absolute;
    top: calc(100% + 5px);
    left: 0;
@@ -154,7 +154,7 @@ body {
    display: inline-block;
 }
 
-.tooltip.bottom:hover::after, .tooltip.bottom:active::after {
+.tooltip.bottom:hover::after {
    top: calc(100% - 5px);
    left: 50%;
 
@@ -167,16 +167,11 @@ body {
 /* BOTTOM NAVIGATION */
 
 .navigation {
-   position: absolute;
-   bottom: 5%;
-   left: 50%;
-   transform: translateX(-50%);
    display: flex;
    align-items: flex-end;
    justify-content: center;
 
-   margin: 0 auto;
-
+   margin: 15% auto;
    font-size: 2rem;
 }
 
