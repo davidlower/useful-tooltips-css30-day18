@@ -167,15 +167,20 @@ body {
 /* BOTTOM NAVIGATION */
 
 .navigation {
+   position: absolute;
+   bottom: 5%;
+   left: 50%;
+   transform: translateX(-50%);
    display: flex;
    align-items: flex-end;
    justify-content: center;
 
-   margin: 15% auto;
+   margin: 0 auto;
+
    font-size: 2rem;
 }
 
-a {
+.navigation a {
    text-decoration: none;
 
    color: #ebebeb;
@@ -197,8 +202,9 @@ a {
 
 /* MEDIA QUERIES */
 
-/* @media screen and (landscape) {
-   .tooltip, .tooltip::before, .tooltip::after {
-      width
+@media screen and (max-width: 850px) and (orientation: landscape) {
+   .navigation {
+      position: relative;
+      margin: 0 auto 5%;
    }
-} */
+}
